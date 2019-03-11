@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Subway Surfers Clone</title>
+    <link rel="stylesheet" href="../webgl.css" type="text/css">
+    <style> 
+			#overlay {
+			    position: absolute;
+			    left: 20px;
+			    top: 20px;
+			    background-color: rgba(90, 90, 90, 0.65);
+			    color: white;
+				font-size: 3em;	
+			    font-family: sans-serif;
+			    padding: 1em;
+      }
+      #danger{
+        animation:blinkingText 0.8s infinite;
+        position: absolute;
+        text-align: center;
+        left: 40vw;
+			  top: 10vh;
+        font-size: 9em;
+      }
+      .blinking{
+	animation:blinkingText 3.8s infinite;
+}
+@keyframes blinkingText{
+	0%{		color: #f00;	}
+	49%{	color: transparent;	}
+	50%{	color: transparent;	}
+	99%{	color:transparent;	}
+	100%{	color: #000;	}
+}
+		</style>
+  </head>
+
+  <body>
+    <body id="load">
+      <div id="bod" class="container">
+        
+        <canvas id="glcanvas" width="1920" height="1080" style="width: 100vw; height: 100vh"></canvas>
+        <div id="overlay">
+          <div>Score:
+            <span id="score"></span>
+          </div>
+          <div>Time:
+            <span id="time"></span>
+          </div>	 
+                  
+        </div>
+        <div>
+            <span style="color: red"id="danger"></span>
+          </div>
+
+      </div>
+  </body>
+      
+  </body>
+  <script src="./gl-matrix.js"></script>
+  <script src="./cube.js"></script>
+  <script src="./wall.js"></script>
+  <script src="./sky.js"></script>
+  <script src="./player.js"></script>
+  <script src="./train.js"></script>
+  <script src="./coins.js"></script>
+  <script src="./jump.js"></script>
+  <script src="./legs.js"></script>
+  <script src="./dogs.js"></script>
+  <script src="./main.js"></script>
+  
+</html>

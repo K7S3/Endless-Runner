@@ -1,2 +1,1 @@
-# subway-surfers-clone
-WebGL implementation of subway surfers
+ Webgl-boilerplate for Graphics Spring 2019
