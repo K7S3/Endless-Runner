@@ -1,1 +1,3 @@
- Webgl-boilerplate for Graphics Spring 2019
+ # Subway Surfers
+ 
+ This repo consists the implementation of the popular Subway Surfers game in WebGL
